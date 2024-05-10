@@ -32,4 +32,5 @@ function MigratePage() {
 export default MigratePage
 
 MigratePage.screen = true
-MigratePage.chains = [ChainId.BSC, ChainId.ETHEREUM, ChainId.BSC_TESTNET, ChainId.GOERLI]
+MigratePage.chains = [ChainId.BSC, ChainId.ETHEREUM, ChainId.BSC_TESTNET, ChainId.GOERLI, ChainId.AVALANCHE]
+
