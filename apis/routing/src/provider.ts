@@ -50,6 +50,8 @@ export const viemProviders: OnChainProvider = ({ chainId }: { chainId?: ChainId 
       return goerliClient
     default:
       return bscClient
+      case ChainId.AVALANCHE: 
+      return createPublicClient({ chain: 'Avalanche', transport: http('AVALANCHE_NODE') })
   }
 }
 
