@@ -43,6 +43,7 @@ export function getV3Subgraphs({ noderealApiKey }: SubgraphParams) {
     [ChainId.SEPOLIA]: null,
     [ChainId.ARBITRUM_SEPOLIA]: null,
     [ChainId.BASE_SEPOLIA]: null,
+    [ChainId.AVALANCHE]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-avalanche',
   } as const satisfies Record<ChainId, string | null>
 }
 
