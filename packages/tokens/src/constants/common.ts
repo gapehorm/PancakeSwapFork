@@ -251,7 +251,15 @@ export const USDC = {
     'USDC',
     'USD Coin',
   ),
-  [ChainId.ARBITRUM_ONE]: new ERC20Token(
+  export const AVAX_MAINNET = new ERC20Token(
+  ChainId.AVALANCHE, 
+  '0x1CE0c2827e2eF14D5C4f29a091d735A204794041', 
+  18, 
+  'AVAX', 
+  'Avalanche Token', 
+  'https://avalanche.network/'
+  )
+   [ChainId.ARBITRUM_ONE]: new ERC20Token(
     ChainId.ARBITRUM_ONE,
     '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
     6,
@@ -382,6 +390,7 @@ export const WBTC_ETH = new ERC20Token(
 )
 
 export const STABLE_COIN = {
+  [ChainId.AVALANCHE]: AVAX_MAINNET,
   [ChainId.ETHEREUM]: USDT[ChainId.ETHEREUM],
   [ChainId.GOERLI]: USDC[ChainId.GOERLI],
   [ChainId.BSC]: USDT[ChainId.BSC],
